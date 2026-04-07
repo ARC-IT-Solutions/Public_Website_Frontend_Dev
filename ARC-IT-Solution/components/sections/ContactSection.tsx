@@ -9,6 +9,7 @@ type FormData = {
   budget: string
   message: string
   honeypot: string
+  contact_number: string
 }
 
 type FormStatus = 'idle' | 'loading' | 'success' | 'error'
@@ -53,7 +54,7 @@ interface ContactSectionProps {
 }
 
 function ContactForm() {
-  const [form, setForm] = useState<FormData>({ name:'', email:'', company:'', budget:'', message:'', honeypot:'' })
+  const [form, setForm] = useState<FormData>({ name:'', email:'', company:'', budget:'', message:'', honeypot:'' , contact_number:''})
   const [errors, setErrors] = useState<Partial<FormData>>({})
   const [status, setStatus] = useState<FormStatus>('idle')
 
@@ -80,7 +81,7 @@ function ContactForm() {
     try {
       await new Promise(res => setTimeout(res, 1800))
       setStatus('success')
-      setForm({ name:'', email:'', company:'', budget:'', message:'', honeypot:'' })
+      setForm({ name:'', email:'', company:'', budget:'', message:'' , contact_number:'', honeypot:'' })
     } catch {
       setStatus('error')
     }
@@ -142,6 +143,7 @@ function ContactForm() {
     />
   </div>
       </div>
+      
 
       <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'1rem' }} className="form-row">
         <div>
@@ -170,7 +172,7 @@ function ContactForm() {
 
       {status === 'error' && (
         <p role="alert" style={{ color:'rgba(220,80,80,0.8)', fontSize:'0.875rem', padding:'0.875rem 1rem', border:'1px solid rgba(220,80,80,0.3)', borderRadius:'1px' }}>
-          Something went wrong. Please try again or email us directly at info@arcit.in
+          Something went wrong. Please try again or email us directly at hello@arcitsolutions.com
         </p>
       )}
 
@@ -209,7 +211,7 @@ export default function ContactSection({ standalone = false }: ContactSectionPro
               Complete the form and we will respond within one business day.
             </p>
             {[
-              { label:'Email Us', value:'info@arcit.in', href:'mailto:info@arcit.in' },
+              { label:'Email Us', value:'hello@arcitsolutions.com', href:'mailto:hello@arcitsolutions.com' },
               { label:'Call Us', value:'+1 (415) 000-0000', href:'tel:+14150000000' },
               { label:'Office', value:'San Francisco, CA — Remote Worldwide', href: null },
             ].map((item) => (
