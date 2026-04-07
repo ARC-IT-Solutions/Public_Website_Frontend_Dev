@@ -28,7 +28,7 @@ export default function Footer() {
           <div>
             <Link href="/" aria-label="ARC IT Solutions — Home" style={{ textDecoration:'none', display:'inline-block', marginBottom:'1.25rem' }}>
               <span style={{ fontFamily:'var(--font-display)', fontSize:'1.5rem', fontWeight:400, color:'var(--text-primary)' }}>
-                ARC IT Solutions<span style={{ color:'var(--accent-gold)' }}>.</span>
+                ARC IT<span style={{ color:'var(--accent-gold)' }}> Solutions</span>
               </span>
             </Link>
             <p className="text-body-sm" style={{ marginBottom:'1.5rem', maxWidth:'260px' }}>

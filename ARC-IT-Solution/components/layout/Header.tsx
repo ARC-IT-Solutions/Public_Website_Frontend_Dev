@@ -52,7 +52,7 @@ export default function Header() {
         <div className="container-site" style={{ display:'flex', alignItems:'center', justifyContent:'space-between', height:'72px' }}>
           <Link href="/" aria-label="ARC IT Solutions — Home" style={{ textDecoration:'none' }}>
             <span style={{ fontFamily:'var(--font-display)', fontSize:'1.375rem', fontWeight:400, letterSpacing:'-0.01em', color:'var(--text-primary)' }}>
-              ARC IT Solutions<span style={{ color:'var(--accent-gold)' }}>.</span>
+              ARC IT<span style={{ color:'var(--accent-gold)' }}> Solutions</span>
             </span>
           </Link>
 

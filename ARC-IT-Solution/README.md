@@ -1,4 +1,4 @@
-# ARC IT Solutions — Multi-Page Production Website
+# Axiom Studio — Multi-Page Production Website
 
 A premium software engineering & creative design agency website built with Next.js 15 App Router, TypeScript, and Tailwind CSS.
 
