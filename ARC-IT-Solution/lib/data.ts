@@ -7,11 +7,11 @@ export const siteConfig = {
   tagline: 'Software Engineering & Creative Design',
   description:
     'A dual-discipline agency — software engineering and creative design — built for businesses that refuse to compromise on craft, quality, or longevity.',
-  email: 'info@arcit.in',
-  address: 'Haryana, India — Remote Worldwide',
-phone: ['+91 9992165050', '+91 9991153885', '+91 701567898'],
+  email: 'hello@arcitsolutions.com',
+phone: ['+1 (415) 000-0000', '+91 701567898'],
+  address: 'San Francisco, CA — Remote Worldwide',
   founded: '2012',
-  url: 'https://www.arcit.in',
+  url: 'https://www.arcitsolutions.com',
   social: {
     twitter: 'https://twitter.com/arcitsolutions',
     linkedin: 'https://linkedin.com/company/arcitsolutions',
