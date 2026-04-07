@@ -8,7 +8,7 @@ export const siteConfig = {
   description:
     'A dual-discipline agency — software engineering and creative design — built for businesses that refuse to compromise on craft, quality, or longevity.',
   email: 'hello@arcitsolutions.com',
-phone: ['+1 (415) 000-0000', '+91 701567898'],
+phone: ['+91 9991153885','+91 9992165050', '+91 7015654688'],
   address: 'San Francisco, CA — Remote Worldwide',
   founded: '2012',
   url: 'https://www.arcitsolutions.com',

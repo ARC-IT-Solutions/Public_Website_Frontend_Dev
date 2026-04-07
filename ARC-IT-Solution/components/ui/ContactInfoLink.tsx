@@ -66,7 +66,7 @@ export default function ContactInfoLink({ item }: { item: ContactItem }) {
     onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--text-secondary)')}
   >
     {item.value}
-  </a>
+  </a>  
 ) : (
   <p
     style={{
