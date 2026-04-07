@@ -64,7 +64,7 @@ export default function ArcaPreview() {
         {/* Logo */}
         <text x="24" y="33" fontFamily="Georgia,serif" fontSize="15" fill="#f0ead8" fontWeight="300" letterSpacing="4">ARCA</text>
         <rect x="24" y="38" width="38" height="0.8" fill="#c9a84c" />
-        <text x="72" y="31" fontFamily="system-ui,sans-serif" fontSize="7.5" fill="#5a5448" letterSpacing="2">ARCHITECTURE</text>
+        <text x="80" y="31" fontFamily="system-ui,sans-serif" fontSize="7.5" fill="#5a5448" letterSpacing="2">ARCHITECTURE</text>
         <text x="72" y="41" fontFamily="system-ui,sans-serif" fontSize="7.5" fill="#5a5448" letterSpacing="2">STUDIO</text>
         {/* Nav links */}
         {['Work', 'Studio', 'Awards', 'Contact'].map((l, i) => (
