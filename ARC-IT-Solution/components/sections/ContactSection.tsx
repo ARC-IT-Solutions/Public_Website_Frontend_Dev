@@ -131,6 +131,16 @@ function ContactForm() {
           />
           {errors.email && <p id="email-error" role="alert" style={{ color:'rgba(220,80,80,0.8)', fontSize:'0.75rem', marginTop:'0.375rem' }}>{errors.email}</p>}
         </div>
+        <div>
+    <label htmlFor="contact_number" style={labelStyle}>Contact Number</label>
+    <input
+      id="contact_number" name="contact_number" type="tel"
+      value={form.contact_number} onChange={handleChange} placeholder="+1 (555) 000-0000"
+      style={{ ...inputStyle, borderColor: 'var(--border-subtle)' }}
+      onFocus={e => (e.target.style.borderColor = 'var(--border-strong)')}
+      onBlur={e => (e.target.style.borderColor = 'var(--border-subtle)')}
+    />
+  </div>
       </div>
 
       <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:'1rem' }} className="form-row">
