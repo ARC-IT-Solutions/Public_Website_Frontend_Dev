@@ -13,7 +13,11 @@ export const metadata: Metadata = {
 
 const contactItems = [
   { label: 'Email', value: siteConfig.email, href: `mailto:${siteConfig.email}` },
-  { label: 'Phone', value: siteConfig.phone, href: `tel:${siteConfig.phone.replace(/\D/g, '')}` },
+  {
+    label: 'Phone',
+    value: siteConfig.phone, // now array
+    href: null, // handle per number instead
+  },
   { label: 'Location', value: siteConfig.address, href: null },
   { label: 'Response Time', value: 'Within 1 business day', href: null },
 ]

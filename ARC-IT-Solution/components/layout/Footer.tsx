@@ -40,11 +40,32 @@ export default function Footer() {
                  onMouseLeave={e=>((e.currentTarget as HTMLAnchorElement).style.color='var(--text-secondary)')}>
                 {siteConfig.email}
               </a>
-              <a href={`tel:${siteConfig.phone.replace(/\D/g,'')}`} className="text-body-sm" style={{ display:'block', textDecoration:'none', color:'var(--text-secondary)', transition:'color 0.2s ease' }}
+              {/* <a href={`tel:${siteConfig.phone.replace(/\D/g,'')}`} className="text-body-sm" style={{ display:'block', textDecoration:'none', color:'var(--text-secondary)', transition:'color 0.2s ease' }}
                  onMouseEnter={e=>((e.currentTarget as HTMLAnchorElement).style.color='var(--text-primary)')}
                  onMouseLeave={e=>((e.currentTarget as HTMLAnchorElement).style.color='var(--text-secondary)')}>
                 {siteConfig.phone}
-              </a>
+              </a> */}
+              {Array.isArray(siteConfig.phone) ? (
+  siteConfig.phone.map((num, i) => (
+    <a
+      key={i}
+      href={`tel:${num.replace(/\D/g, '')}`}
+      className="text-body-sm"
+      onMouseEnter={e => (e.currentTarget.style.color = 'var(--text-primary)')}
+      onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-secondary)')}
+      style={{ display: 'block' }}
+    >
+      {num}
+    </a>
+  ))
+) : (
+  <a
+    href={`tel:${siteConfig.phone.replace(/\D/g, '')}`}
+    className="text-body-sm"
+  >
+    {siteConfig.phone}
+  </a>
+)}
             </address>
           </div>
 
