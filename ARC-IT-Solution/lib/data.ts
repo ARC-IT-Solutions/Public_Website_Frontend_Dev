@@ -11,7 +11,7 @@ export const siteConfig = {
   phone: '+91 9992165050 \n +91 9991153885 \n +91 7015654688',
   address: 'San Francisco, CA — Remote Worldwide',
   founded: '2012',
-  url: 'https://www.arcitsolutions.com',
+  url: 'https://www.arcit.in',
   social: {
     twitter: 'https://twitter.com/arcitsolutions',
     linkedin: 'https://linkedin.com/company/arcitsolutions',
