@@ -45,26 +45,15 @@ export default function Footer() {
                  onMouseLeave={e=>((e.currentTarget as HTMLAnchorElement).style.color='var(--text-secondary)')}>
                 {siteConfig.phone}
               </a> */}
-              {Array.isArray(siteConfig.phone) ? (
-  siteConfig.phone.map((num, i) => (
+              {siteConfig.phone.map((num, i) => (
     <a
       key={i}
       href={`tel:${num.replace(/\D/g, '')}`}
       className="text-body-sm"
-      onMouseEnter={e => (e.currentTarget.style.color = 'var(--text-primary)')}
-      onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-secondary)')}
-      style={{ display: 'block' }}
+      style={{ display: 'block', color: 'var(--text-secondary)' }}
     >
       {num}
-    </a>
-  ))
-) : (
-  <a
-    href={`tel:${siteConfig.phone.replace(/\D/g, '')}`}
-    className="text-body-sm"
-  >
-    {siteConfig.phone}
-  </a>
+    </a>)
 )}
             </address>
           </div>
