@@ -19,7 +19,7 @@ type FormErrors = Partial<Record<keyof FormData, string>>
 type FormStatus = 'idle' | 'loading' | 'success' | 'error'
 
 // ── API ────────────────────────────────────────────────────────────────────
-const API_URL= 'https://backend-prod-9t0y.onrender.com'
+const API_URL= 'https://backend-prod-9t0y.onrender.com:10000/inquiries'
 
 async function submitInquiry(data: Omit<FormData, 'honeypot'>) {
   const res = await fetch(API_URL, {
@@ -346,7 +346,7 @@ function ContactForm() {
           <br />
           <span style={{ fontSize:'0.8125rem', color:'var(--text-muted)' }}>
             Or email us directly at{' '}
-            <a href="mailto:hello@arcitsolutions.com" style={{ color:'var(--accent-gold)' }}>
+            <a href="mailto:info@arcit.in" style={{ color:'var(--accent-gold)' }}>
               hello@arcitsolutions.com
             </a>
           </span>
