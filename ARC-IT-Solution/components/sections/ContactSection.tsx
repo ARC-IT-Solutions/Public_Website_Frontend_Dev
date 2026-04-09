@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import API_URL from '../../config'
 
 // ── Types ──────────────────────────────────────────────────────────────────
 type FormData = {
@@ -18,7 +19,7 @@ type FormErrors = Partial<Record<keyof FormData, string>>
 type FormStatus = 'idle' | 'loading' | 'success' | 'error'
 
 // ── API ────────────────────────────────────────────────────────────────────
-const API_URL = 'http://127.0.0.1:8000/api/v1/inquiries'
+
 
 async function submitInquiry(data: Omit<FormData, 'honeypot'>) {
   const res = await fetch(API_URL, {
