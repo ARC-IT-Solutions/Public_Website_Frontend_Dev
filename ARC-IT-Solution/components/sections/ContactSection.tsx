@@ -19,7 +19,7 @@ type FormErrors = Partial<Record<keyof FormData, string>>
 type FormStatus = 'idle' | 'loading' | 'success' | 'error'
 
 // ── API ────────────────────────────────────────────────────────────────────
-const API_URL= 'https://backend-prod-9t0y.onrender.com:10000/api/v1/inquiries'
+const API_URL= 'https://backend-prod-9t0y.onrender.com/api/v1/inquiries'
 
 async function submitInquiry(data: Omit<FormData, 'honeypot'>) {
   const res = await fetch(API_URL, {
