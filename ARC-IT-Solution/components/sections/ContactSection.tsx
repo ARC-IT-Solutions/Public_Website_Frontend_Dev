@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import API_URL from '../../config'
+// import API_URL from '../../config'
 
 // ── Types ──────────────────────────────────────────────────────────────────
 type FormData = {
@@ -19,7 +19,7 @@ type FormErrors = Partial<Record<keyof FormData, string>>
 type FormStatus = 'idle' | 'loading' | 'success' | 'error'
 
 // ── API ────────────────────────────────────────────────────────────────────
-
+const API_URL= 'https://backend-prod-9t0y.onrender.com'
 
 async function submitInquiry(data: Omit<FormData, 'honeypot'>) {
   const res = await fetch(API_URL, {
