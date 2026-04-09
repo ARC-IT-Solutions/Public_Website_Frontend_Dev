@@ -1,1 +1,1 @@
-export const API_URL = 'http://127.0.0.1:8000/api/v1/inquiries'
+export const API_URL = 'https://backend-prod-9t0y.onrender.com'
