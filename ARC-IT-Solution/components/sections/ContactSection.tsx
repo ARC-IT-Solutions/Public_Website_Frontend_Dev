@@ -347,7 +347,7 @@ function ContactForm() {
           <span style={{ fontSize:'0.8125rem', color:'var(--text-muted)' }}>
             Or email us directly at{' '}
             <a href="mailto:info@arcit.in" style={{ color:'var(--accent-gold)' }}>
-              hello@arcitsolutions.com
+              info@arcit.in
             </a>
           </span>
         </div>
@@ -418,7 +418,7 @@ export default function ContactSection({ standalone = false }: ContactSectionPro
               Complete the form and we will respond within one business day.
             </p>
             {[
-              { label:'Email Us',  value:'hello@arcitsolutions.com', href:'mailto:hello@arcitsolutions.com' },
+              { label:'Email Us',  value:'info@arcit.in', href:'mailto:info@arcit.in' },
               { label:'Call Us',   value:'+1 (415) 000-0000',        href:'tel:+14150000000' },
               { label:'Office',    value:'San Francisco, CA — Remote Worldwide', href: null },
             ].map((item) => (
