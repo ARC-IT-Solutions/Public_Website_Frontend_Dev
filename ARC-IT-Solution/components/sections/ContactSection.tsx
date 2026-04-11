@@ -420,7 +420,7 @@ export default function ContactSection({ standalone = false }: ContactSectionPro
             {[
               { label:'Email Us',  value:'info@arcit.in', href:'mailto:info@arcit.in' },
               { label:'Call Us',   value:'+1 (415) 000-0000',        href:'tel:+14150000000' },
-              { label:'Office',    value:'San Francisco, CA — Remote Worldwide', href: null },
+              { label:'Office',    value:'Haryana, INDIA — Remote Worldwide', href: null },
             ].map((item) => (
               <div key={item.label} style={{ marginBottom:'1.25rem' }}>
                 <span className="text-label" style={{ display:'block', marginBottom:'0.25rem', fontSize:'0.625rem' }}>
