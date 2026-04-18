@@ -1,0 +1,19 @@
+# ARC IT Solutions
+
+ARC IT Solutions is a dual-discipline software engineering and creative design agency founded in 2026, based in Haryana, India. We build software products, digital interfaces, brand identities, and technology strategies for ambitious businesses.
+
+## Services
+- Full-stack software engineering (React, Next.js, Node.js, Python, AWS)
+- Product design and UX/UI (Figma, design systems, prototyping)
+- Brand identity and visual design
+- Technology consulting and digital strategy
+
+## Selected Work
+-  Financial Platform: wealth management SaaS, $2B+ AUM
+-  Health: HIPAA-compliant mobile app, 400K+ users
+- Arc Architecture Studio: award-nominated brand and website
+-  Logistics: multi-tenant SaaS, 80+ enterprise clients
+
+## Contact
+info@arcit.in
+https://www.arcit.in/contact

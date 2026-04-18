@@ -75,10 +75,36 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#0d0d0b" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+           // In app/layout.tsx <head>
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "ARC IT Solutions",
+    "description": "Software engineering and creative design agency.",
+    "url": "https://www.arcit.in",
+    "email": "info@arcit.in",
+    "foundingDate": "2026",
+    "areaServed": "Worldwide",
+    "serviceType": [
+      "Software Engineering",
+      "Product Design",
+      "Brand Identity",
+      "Technology Consulting"
+    ],
+    "sameAs": [
+      "https://linkedin.com/company/arcit",
+      "https://twitter.com/arcit"
+    ]
+  })}}
+/>
       </head>
       <body>
         {children}
       </body>
+      
     </html>
+ 
   )
 }
